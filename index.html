@@ -1,16 +1,10 @@
-<!DOCTYPE html>
-<html>
-<head>
-<title>index.md</title>
-<meta http-equiv="Content-type" content="text/html;charset=UTF-8">
-
 <style>
 /* https://github.com/microsoft/vscode/blob/master/extensions/markdown-language-features/media/markdown.css */
 /*---------------------------------------------------------------------------------------------
  *  Copyright (c) Microsoft Corporation. All rights reserved.
  *  Licensed under the MIT License. See License.txt in the project root for license information.
  *--------------------------------------------------------------------------------------------*/
-
+/* Style code unapologetically stolen from the original html file.*/
 body {
 	font-family: var(--vscode-markdown-font-family, -apple-system, BlinkMacSystemFont, "Segoe WPC", "Segoe UI", "Ubuntu", "Droid Sans", sans-serif);
 	font-size: var(--vscode-markdown-font-size, 14px);
@@ -480,133 +474,16 @@ code {
     }
 
 </style>
-<h1 id="github-pages-template">GitHub Pages Template</h1>
-<p>This document presents a sample GitHub Pages layout that includes rich media such as:</p>
-<ul>
-<li>GIFs, Images &amp; Videos</li>
-<li><code>iframe</code> content from <a href="https://www.youtube.com/">YouTube</a> , <a href="https://itch.io/">itch.io</a> and <a href="https://blueprintue.com/">blueprintue</a></li>
-</ul>
-<p>You can use this format to showcase games, prototypes, technical demos, or creative projects.</p>
-<p>Please refer to the media and tables below as examples of how to present your work clearly and effectively.</p>
-<hr>
-<h2 id="markdown-to-html-md-%E2%86%92-html">Markdown to HTML (<code>.md</code> → <code>.html</code>)</h2>
-<p>Once your <a href="index.md"><code>index.md</code></a> file is complete, you can convert it into a <code>.html</code> file using <a href="https://code.visualstudio.com/">VS Code</a> and the <a href="https://marketplace.visualstudio.com/items?itemName=yzane.markdown-pdf">Markdown PDF</a> extension:</p>
-<ol>
-<li>Install <strong>Markdown PDF</strong> from the Extensions panel.</li>
-<li>Open <code>index.md</code>.</li>
-<li>Press <code>Ctrl + Shift + P</code> → Select <strong>Markdown PDF: Export (html)</strong>.</li>
-<li>Commit the generated <code>index.html</code> file for use with GitHub Pages.</li>
-</ol>
-<hr>
-<h2 id="hosting-via-github-pages">Hosting via GitHub Pages</h2>
-<iframe class="youtube-embed" src="https://www.youtube.com/embed/5XhxR9Vs6zc?si=ROTLf2RMwouvSjq2" allowfullscreen></iframe>
-<h3 id="quick-hosting">Quick Hosting</h3>
-<ol>
-<li>
-<p>Go to your repository on GitHub.</p>
-</li>
-<li>
-<p>Click the <strong>Settings</strong> tab.</p>
-</li>
-<li>
-<p>In the left menu, select <strong>Pages</strong> (under <strong>Code and automation</strong>).</p>
-</li>
-<li>
-<p>Under <strong>Build and deployment</strong>:</p>
-<ul>
-<li>Set <strong>Source</strong> to <code>Deploy from a branch</code>.</li>
-<li>Set <strong>Branch</strong> to <code>main</code>.</li>
-<li>Set <strong>Folder</strong> to <code>/ (root)</code> (or <code>/docs</code> if your content is in the <code>docs/</code> folder).</li>
-</ul>
-</li>
-<li>
-<p>Click <strong>Save</strong>.</p>
-</li>
-<li>
-<p>GitHub will generate a public URL (e.g.
-<code>https://your-username.github.io/your-repo-name/</code>) at the top of the page.</p>
-</li>
-</ol>
-<blockquote>
-<p>Your site may take a minute or two to go live. Reload the link if you see a 404 error initially.</p>
-</blockquote>
-<hr>
-<h2 id="example-gif">Example GIF</h2>
-<p><img src="assets/demo.gif" alt=""></p>
-<p><em>Figure 1. <code>demo.gif</code>, an example animated snippet showing system behaviour.</em></p>
-<p>GIFs are ideal for demonstrating short sequences, like UI transitions, animation loops, or gameplay snippets. Keep GIFs short and under 10MB where possible.</p>
-<hr>
-<h2 id="demo-video">Demo Video</h2>
-<video controls>
-  <source src="assets/demo.mp4" type="video/mp4">
-</video>
-<p><em>Figure 2. <code>demo.mp4</code>, a short embedded video demonstration.</em></p>
-<p>Videos are useful for showing interactions, effects, or walkthroughs. Use screen capture tools to create <code>.mp4</code> recordings of your project and embed them locally using the <code>&lt;video&gt;</code> tag.</p>
-<hr>
-<h2 id="blueprint-example">Blueprint Example</h2>
-<iframe src="https://blueprintue.com/render/_wo11g40/" allowfullscreen></iframe>
-<p><em>Figure 3. BlueprintUE embed — useful for sharing Unreal Engine logic visually.</em></p>
-<p>BlueprintUE is a powerful way to share and discuss Blueprint graphs in a readable format. Ideal for sharing logic behind player controls, mechanics, or UI interaction.</p>
-<hr>
-<h2 id="itchio-widget">Itch.io Widget</h2>
-<iframe class="itch-widget" src="https://itch.io/embed/3456580" frameborder="0">
-  <a href="https://simex.itch.io/hollowspire">Hollowspire by Simex, anstabo</a>
-</iframe>
-<p><em>Figure 4. Itch.io widget embed — link to downloadable or web-based projects.</em></p>
-<p>Use the Itch.io embed widget to allow others to play or download your game directly from your submission. This is useful for deployed games or interactive tools.</p>
-<hr>
-<h2 id="youtube-embed">YouTube Embed</h2>
-<iframe class="youtube-embed" src="https://www.youtube.com/embed/XwYX2GLu6bU?si=AhM8-7fZvgBTXNOI" allowfullscreen></iframe>
-<p><em>Figure 5. YouTube video — for trailers, walkthroughs, or demonstrations.</em></p>
-<p>If your video is hosted externally (e.g. YouTube), you can embed it directly using the iframe tag. This is especially useful for longer-form content or commentary.</p>
-<hr>
-<h2 id="code-snippet">Code Snippet</h2>
-<pre class="hljs"><code><div><span class="hljs-comment"># Example: clone and run</span>
-git <span class="hljs-built_in">clone</span> https://github.com/yourusername/your-project-name
-<span class="hljs-built_in">cd</span> your-project-name
-open index.html
-</div></code></pre>
-<p><em>Figure 6. hello-world.cpp — for your... code...</em></p>
-<hr>
-<h2 id="feature-summary">Feature Summary</h2>
-<p>Use a table to summarise what your project contains:</p>
-<table>
-<thead>
-<tr>
-<th>Feature</th>
-<th>Implemented</th>
-<th>Notes</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>Core Mechanic</td>
-<td>✅ Yes</td>
-<td>Demonstrated via GIF/video</td>
-</tr>
-<tr>
-<td>UI/UX Functionality</td>
-<td>✅ Yes</td>
-<td>Simple HUD layout shown</td>
-</tr>
-<tr>
-<td>Sound Implementation</td>
-<td>🔶 Partial</td>
-<td>Minimal SFX &amp; Music, no settings</td>
-</tr>
-<tr>
-<td>Save/Load System</td>
-<td>❌ No</td>
-<td>Not required for this prototype</td>
-</tr>
-<tr>
-<td>Gamepad Support</td>
-<td>✅ Yes</td>
-<td>Tested with Xbox controller</td>
-</tr>
-</tbody>
-</table>
-<p><em>Figure 7. table example — use tables to show case data, features, etc</em></p>
-
-</body>
-</html>
+<h1>Patrolling AI In Unreal Engine 5</h1>
+<img src="assets/ai footage.gif"></img>
+<p>This is a basic <b>AI implementation</b> in <b><i>Unreal Engine 5.6</i></b> that moves a <b>pawn</b> to random locations within a <b>navigation mesh</b>.</p>
+<p>I made this with extensive help from <b><i>YouTube</i></b> tutorials and posts on <b><i>Epic Games'</i> developer forum</b>, but the process was overall relatively simple.</p>
+<p>I got stumped when my <b><i>GetRandomLoc</i></b> function wouldn't work, but I quickly found that it was because I had forgotten to set up the navigation mesh and reference it in the <b><i>GetRandomReachablePointInRadius</i></b> node.</p>
+<p>This is a very basic system, so I can't see much getting in the way of scalability.</p>
+<p>The source code for this project is contained within the <b><i>AIPatrol</i></b> subfolder.</p>
+<h2>PawnController</h2>
+<iframe src="https://blueprintue.cls.ru.nl/render/27zoqko7/" scrolling="no" allowfullscreen width="720px" height="480px"></iframe>
+<h2>AIBehaviour (Blackboards are broken in BlueprintUE) </h2>
+<iframe src="https://blueprintue.cls.ru.nl/render/s7nt6ikh/" scrolling="no" allowfullscreen width="720px" height="480px"></iframe>
+<h2>GetRandomLoc</h2>
+<iframe src="https://blueprintue.cls.ru.nl/render/zqy03u-0/" scrolling="no" allowfullscreen width="720px" height="480px"></iframe>
